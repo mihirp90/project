@@ -1,0 +1,14 @@
+import { Injectable } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Message } from './message';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class HelloWordService {
+
+  constructor(private http: HttpClient) { }
+
+  helloWorldService() {
+  }
+}

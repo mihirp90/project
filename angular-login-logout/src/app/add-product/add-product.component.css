@@ -1,0 +1,27 @@
+.customInput{
+    margin-left: 0px;
+}
+
+.container {
+    width: 300px;
+    clear: both;
+  }
+  
+  .container input {
+    width: 100%;
+    clear: both;
+  }
+
+
+:host ::ng-deep .p-fluid .p-button {
+    width: 40%;
+    align-items: center;
+    margin-left: 60px;
+    margin-top:10px;
+}
+
+:host ::ng-deep .p-colorpicker-preview, .p-fluid .p-colorpicker-preview.p-inputtext {
+    width: 2rem;
+    height: 2rem;
+    margin-top: 5px;
+}

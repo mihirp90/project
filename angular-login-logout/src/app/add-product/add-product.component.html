@@ -1,0 +1,32 @@
+<div *ngIf="invalid">
+    {{message}}
+</div>
+<p-panel>
+    <div class="card">
+        <div class="p-fluid container">
+            <div class="col-md-12">
+                <label for="productId">ProductId</label>
+                <input [(ngModel)]="productId" class="customInput" id="productId" type="text" pInputText> 
+            </div>
+            <div class="col-md-12">
+                <label for="productName">ProductName</label>
+                <input [(ngModel)]="productName" class="customInput" id="productName" type="text" pInputText> 
+            </div>
+            <div class="col-md-12">
+                <label for="price">Price</label>
+                <input [(ngModel)]="price" class="customInput" id="price" type="text" pInputText> 
+            </div>
+            <div class="col-md-12">
+                <label for="brand">Brand</label>
+                <input [(ngModel)]="brand" class="customInput" id="brand" type="text" pInputText> 
+            </div>
+            <div class="col-md-12">
+                <label for="color">Color</label>
+                <p-colorPicker id="color" [(ngModel)]="color"></p-colorPicker>
+            </div>
+            <div>
+                <p-button label="Submit" (onClick)="addProduct()"></p-button>
+            </div>
+        </div>
+    </div>
+</p-panel>
